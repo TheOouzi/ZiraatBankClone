@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Hoşgeldiniz | Ziraat Bankası İnternet Bankacılığı</title>
+    <style>
+        /* link tagı ile farklı yerde yazılan css kodlarını bağlar */
+        html{
+            height: auto;
+            min-height: 100%;
+            width: 100%;
+            font: inherit;
+            font-family:'Gotham Narrow Book',Arial,'Trebuchet MS';
+        }
+        body{
+            background-image: url("login-bg.jpg");
+            /* bu özellik arkaplan resmi küçültüyor burda kullanışsız */
+            /* background-size: contain; */
+            background-repeat: no-repeat;
+             height: auto;
+             min-height: 100%;
+             margin: 0;
+             border: 0;
+             padding: 0;
+             width: 100%;
+             line-height: 1;
+             font: inherit;
+        }
+        .logo{
+            width: 100%;
+            height: 65px;
+            background-color: #fff;
+            float: left;
+            padding: 15px;
+        } 
+        .zb{
+            display: block;
+            background-image: url("ziraat.png");
+            /* background-size: 50%; */
+            height: 100%;
+            width: 45%;
+            background-repeat: no-repeat;
+            float: left;
+            margin:5px 0 0 150px;
+        }
+        .kutu{
+            display: block;
+            text-align: right;
+            width: auto;
+            height: 30px;
+            float: right;
+            color: white;
+            margin-right:20px;
+            font-size: 15px;
+            font-family: 'Gotham Narrow';
+        }
+        .marbelirleme{
+           padding-top:10px;
+            width: 100%;
+            height: 30px;
+            background-color: #e20514;
+        }
+        .login{
+            width: 570px;
+            height: 460px;
+            float: left;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-wrap: wrap;
+            display: flex;
+            margin-left: 150px;
+        }
+        .login_box{
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+           
+        }
+        .login_box p{
+            text-align: center;
+            font-size: 1.125rem;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .bi_kur .birey{
+            color: white;
+            text-align: center;
+            margin-left:25% ;
+        }
+        .bi_kur .kurum{
+            color: white;
+            text-align: center;
+            opacity: 0.5;
+            margin-left: 5%;
+        }
+        #tc_input{
+            width: 395px;
+            height: 30px;
+            float: left;
+            border-radius: 100px;
+            margin-top: 20px;
+            border: 1px solid white;
+        }
+        #beni_hatırla{
+            width: 60px;
+            height: 25px;
+            background-color: rgb(172, 148, 148);
+            border-radius: 15px;
+            margin:5px 0 5px 335px;
+            float: left;
+            border: 1px solid white;
+        }
+        #yuvarlak{
+            width: 20px;
+            height:20px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 2px;
+            float: left;
+        }
+        #pass_input{
+            width: 395px;
+            height: 30px;
+            border-radius: 100px;
+            float: left;
+            border: 1px solid white;
+            margin-top: 10px;
+        }
+        #beni_hatırla2{
+            width: 60px;
+            height: 25px;
+            background-color: rgb(172, 148, 148);
+            border-radius: 15px;
+            margin:5px 0 5px 335px;
+            float: left;
+            border: 1px solid white;
+        }
+        #yuvarlak2{
+            width: 20px;
+            height:20px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 2px;
+            float: left;
+        }
+        #devam_button{
+            width: 395px;
+            height: 40px;
+            background-color: rgb(75, 70, 70);
+            color: white;
+            border: 1px solid rgb(75, 70, 70);
+            border-radius: 100px;
+            margin-top: 10px;
+        }
+        #devam_button:hover{
+            transition: 0.5s;
+            background-color: white;
+            color: black;
+            border-radius: 100px;
+            border: 1px solid white;
+        }
+        .kimlik_giris{
+            display:block;
+            padding:5px;
+            color:#00acba;
+            font-size:16px;
+            width: 370px;
+            background-color:#fff;
+            border-radius:15px;
+            margin:60px auto 20px 5%;
+            text-align: center;
+            float: left;
+        }
+         .phone{
+            float: left;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            display: flex;
+            margin-left:5%;
+            width: 370px;
+            height: 300px;
+            background-color: rgb(206, 197, 197);
+            text-align: center;
+            border-radius: 15px;
+            
+        } 
+        .tel1{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            margin: auto;
+            float: left;
+        }
+        .tel2{
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            margin: auto;
+            float: left;
+        }
+        #hemn_yukle{
+            width: 120px;
+            height: 30px;
+            border: 1px solid rgb(95, 91, 91);
+            border-radius: 20px;
+            color: rgb(95, 91, 91);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: left;
+            margin-left: 20px;
+        }
+        #hemn_yukle:hover{
+            background-color: black;
+            color: white;
+            border-color: white;
+        }
+        
+        
+    
+        
+    </style>
+    
+</head>
+<body> 
+    <div class="marbelirleme">
+        <script>
+            var menu=new Array("ENGLISH","SIKÇA SORULAN SORULAR","YARDIM","GÜVENLİK");
+            for(var i=0; i<4; i++){
+                    document.write("<div class='kutu'>",menu[i],"</div>");
+                }
+        </script>
+    </div>
+    <div class="logo">
+        <span class="zb"></span>
+    </div>
+    <div class="login">
+        <div class="login_box">
+            <p>İnternet Şubemize Hoş Geldiniz</p><br>
+            <span class="bi_kur">
+                <span class="birey"">BİREYSEL</span><span class="kurum" style="width: auto; height:20px; border-left: 1px solid grey;"> KURUMSAL</span>
+            </span>
+            <input id="tc_input" type="text" style="color: rgb(224, 207, 207);" value="T.C Kimlik/Müşteri Numaranız" onfocus="giris(this.id)" onblur="cikis(this.id,this.value)">
+            <script>
+                function giris(x) {
+                    if (x=="tc_input" || x=="pass_input") {
+                       document.getElementById(x).value="";
+                        document.getElementById(x).style.borderColor="black";
+                      
+                    }
+                 }
+                       
+                function cikis(x,y) {
+                        if (y=="") {
+                            if(x=="tc_input"){
+                                document.getElementById(x).value="T.C Kimlik/Müşteri Numaranız";
+                                document.getElementById(x).style.color="rgb(224, 207, 207)";
+                            }
+                            if(x=="pass_input"){
+                                document.getElementById(x).value="Parola giriniz";
+                                document.getElementById(x).style.color="rgb(224, 207, 207)";
+                            }
+                        }
+                        else{
+                                document.getElementById(x).style.backgroundColor="white";
+                                document.getElementById(x).style.color="black";
+                                document.getElementById(x).style.borderColor="white";
+                        }
+                    }
+                
+                function cevir() {
+                    document.getElementById("beni_hatırla").style.backgroundColor="#2bd116";
+                    document.getElementById("yuvarlak").style.width="16px";
+                    document.getElementById("yuvarlak").style.transition="0.5s";
+                    document.getElementById("yuvarlak").style.height="16px";
+                    document.getElementById("yuvarlak").style.borderRadius="8px";
+                    document.getElementById("yuvarlak").style.marginTop="4px";
+                    document.getElementById("yuvarlak").style.marginLeft="40px";
+                }
+                function geri() {
+                    document.getElementById("beni_hatırla").style.backgroundColor="rgb(172, 148, 148)";
+                    document.getElementById("yuvarlak").style.width="20px";
+                    document.getElementById("yuvarlak2").style.transition="0.5s";
+                    document.getElementById("yuvarlak").style.height="20px";
+                    document.getElementById("yuvarlak").style.borderRadius="10px";
+                    document.getElementById("yuvarlak").style.margin="2px";
+                    document.getElementById("yuvarlak").style.float="left";
+                }
+            </script>
+            <span style="float: left; color: white; margin:5px 0 -20px 250px; font-size: 15px; font-family: serif;">Beni hatırla</span>
+            <div id="beni_hatırla" onclick="cevir()" ondblclick="geri()">
+                <div id="yuvarlak" ></div>
+            </div>
+            <input type="text"  id="pass_input" style="color:rgb(212, 202, 202)" value="Parolanızı giriniz" onfocus="giris(this.id)" onblur="cikis(this.id,this.value)">
+            <script>
+                 function cevir2() {
+                    document.getElementById("beni_hatırla2").style.backgroundColor="#2bd116";
+                    document.getElementById("yuvarlak2").style.width="16px";
+                    document.getElementById("yuvarlak2").style.height="16px";
+                    document.getElementById("yuvarlak2").style.borderRadius="8px";
+                    document.getElementById("yuvarlak2").style.marginTop="4px";
+                    document.getElementById("yuvarlak2").style.marginLeft="40px";
+                }
+                function geri2() {
+                    document.getElementById("beni_hatırla2").style.backgroundColor="rgb(172, 148, 148)";
+                    document.getElementById("yuvarlak2").style.width="20px";
+                    document.getElementById("yuvarlak2").style.height="20px";
+                    document.getElementById("yuvarlak2").style.borderRadius="10px";
+                    document.getElementById("yuvarlak2").style.margin="2px";
+                    document.getElementById("yuvarlak2").style.float="left";
+                }
+            </script>
+            <span style="float: left; color: white; margin:5px 0 -20px 200px; font-size: 15px; font-family: serif;">Mobil İmza İle Giriş ?</span>
+            <div id="beni_hatırla2" onclick="cevir2()" ondblclick="geri2()">
+                <div id="yuvarlak2"></div>
+            </div>
+            <input type="button" id="devam_button" value="DEVAM">
+            <a href="#" style="color: white; margin:5px 0 0 280px; font-size: 15px; float: left;">Şifremi Unuttum</a><br>
+            <div style="width: 395px; height: 1px; background-color: rgb(212, 195, 195); float: left; margin: 10px 0 10px 0;"></div>
+            <p style="color: white; font-size: 15px; font-family: 'Times New Roman', Times, serif;">Dijital Bankacılık müşterimiz olmak için</p>
+            <input type="button"  class="basvur_buton" value="HEMEN BAŞVUR" style="width: 395px; height: 40px; border: 1px solid white; border-radius: 100px; color: white; background-color: rgb(219, 34, 34); margin-top: 10px; float: left;">
+        </div>
+    </div>
+        <div class="kimlik_giris">
+            <p>T.C. KİMLİK KARTI İLE GİRİŞ</p>
+        </div> 
+         <div class="phone">
+            <div id="phone_ic" style="width: 340px; height: 270px; margin: 15px;">
+                <div id="imag_phone" style="width:340px; height:140px ; float: left; border-bottom: 1px solid rgb(81, 81, 245);">
+                <span style="background-image: url('phone.png'); float: left; width: 50px; height: 100px; margin: 20px 0 0 10px; background-repeat: no-repeat;"></span>
+                <p style="color:rgb(87, 80, 80); font-size: larger; text-align: left; margin-left: 10px;">Mobil uygulamamız ile Ziraat Bankası hep yanınızda!</p>
+                <input type="button" value="HEMEN YÜKLE" id="hemn_yukle">
+                </div>
+                <div class="acıklama" style="width: 340px; height: 130px; float: left;">
+                <p style="display: block; font-size: 13px; width: 250px; margin-left:80px; color: rgb(139, 129, 129); text-align: left;">Ziraat Bankası İnternet Şubesi´ne sadece <a href="#" style="text-decoration: none; color: rgb(139, 129, 129);">www.ziraatbank.com.tr</a> adresindeki "İnternet Şubesi" linkine tıklayarak ulaşınız</p>
+                <p style="display: block; font-size: 13px; width: 250px; margin-left:80px; color: rgb(139, 129, 129); text-align: left;">Müşteri numaranızı, İnternet/Mobil bankacılık giriş ve ATM şifrenizi Ziraat Bankası personeli dahil kimse ile paylaşmayınız.</p>
+                </div>
+            </div>
+        </div> 
+</body>
+</html>
